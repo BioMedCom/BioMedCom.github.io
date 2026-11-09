@@ -1,225 +1,1132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="auto">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Logiraj Kumaralingam | PhD Candidate, Ultrasound Imaging & Machine Learning</title>
-  <meta name="description" content="PhD candidate at the University of Alberta working on AI-driven 3D ultrasound imaging, intraoral ultrasound, and medical image analysis.">
+  <title>Logiraj Kumaralingam | PhD Candidate in Medical Sciences (Ultrasound & AI)</title>
+  <meta name="description" content="Logiraj Kumaralingam - PhD Candidate in Medical Sciences at University of Alberta. Researching AI-driven 3D ultrasound imaging, periodontal sonography, and biomedical deep learning.">
+  <meta name="keywords" content="Logiraj Kumaralingam, Logiraj, BioMedCom, Ultrasound Imaging, Medical Image Analysis, Deep Learning, 3D Reconstruction, OralSAM, University of Alberta">
+  <meta name="author" content="Logiraj Kumaralingam">
+
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://biomedcom.github.io/">
+  <meta property="og:title" content="Logiraj Kumaralingam | PhD Candidate in Medical Sciences">
+  <meta property="og:description" content="AI-driven 3D Ultrasound Imaging, Periodontal Sonography, and Biomedical Machine Learning at the University of Alberta.">
+  <meta property="og:image" content="https://biomedcom.github.io/avatar.jpg">
+
+  <!-- Favicon (SVG Ultrasound / Medical Tech Wave) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%232563eb'/><stop offset='100%25' stop-color='%2306b6d4'/></linearGradient></defs><circle cx='50' cy='50' r='46' fill='url(%23g)'/><path d='M25 50 C32 30, 38 70, 50 50 C62 30, 68 70, 75 50' stroke='white' stroke-width='6' stroke-linecap='round' fill='none'/><circle cx='50' cy='50' r='6' fill='white'/></svg>">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav>
-  <div class="inner">
-    <a class="brand" href="#top">Logiraj K.</a>
-    <a href="#about">About</a>
-    <a href="#research">Research</a>
-    <a href="#publications">Publications</a>
-    <a href="#awards">Awards</a>
-    <a href="#mentoring">Mentoring</a>
-    <a href="#service">Service</a>
-    <a href="#contact">Contact</a>
-  </div>
-</nav>
+  <!-- Navigation Bar -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a class="nav-brand" href="#top">
+        <span class="brand-avatar-mini"><img src="avatar.jpg" alt="Logiraj K."></span>
+        <span class="brand-name">Logiraj K.</span>
+      </a>
 
-<main id="top">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
 
-  <header class="hero">
-    <h1>Logiraj Kumaralingam</h1>
-    <p class="role">PhD Candidate, Medical Sciences</p>
-    <p class="affil">Department of Radiology and Diagnostic Imaging, University of Alberta, Edmonton, Canada</p>
-    <p class="lead">
-      I develop machine learning methods for ultrasound imaging, with a focus on real-time 3D reconstruction
-      of intraoral structures and automated quantitative analysis for precision dental and pediatric care.
-    </p>
-    <div class="links">
-      <a href="mailto:logiraj@ualberta.ca">Email</a>
-      <a href="https://scholar.google.com/scholar?q=Logiraj+Kumaralingam" target="_blank" rel="noopener">Google Scholar</a>
-      <a href="https://www.linkedin.com/in/logiraj" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="https://github.com/BioMedCom" target="_blank" rel="noopener">GitHub</a>
-      <a href="cv.pdf">Download CV</a>
+      <nav class="nav-menu" id="navMenu">
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#news">News</a>
+        <a class="nav-link" href="#research">Research</a>
+        <a class="nav-link" href="#publications">Publications</a>
+        <a class="nav-link" href="#grants">Grants</a>
+        <a class="nav-link" href="#awards">Awards</a>
+        <a class="nav-link" href="#mentoring">Mentoring</a>
+        <a class="nav-link" href="#experience">Experience</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle" id="themeToggle" title="Toggle dark/light mode" aria-label="Toggle theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+      </div>
     </div>
   </header>
 
-  <section id="about">
-    <h2>About</h2>
-    <p>
-      I am a PhD candidate under the supervision of Prof. Lawrence H. Le at the University of Alberta
-      (expected completion May 2027). My dissertation, <em>"Advancing Dental Imaging: 3D Reconstruction of
-      Intraoral Structures using High-frequency Ultrasound with Machine Learning,"</em> combines freehand 3D
-      ultrasound, deep learning, and segmentation to make radiation-free periodontal assessment practical.
-    </p>
-    <p>
-      Before Alberta, I completed a first-class Honours BSc in Computer Science at Eastern University, Sri Lanka,
-      and worked on tractography and brain connectivity analysis. I also collaborate on pediatric inflammatory
-      bowel disease ultrasound, carotid ultrasound reconstruction, and quantum-inspired models for Alzheimer's disease.
-    </p>
+  <main id="top">
 
-    <h3 style="margin-top:1.4rem">Research interests</h3>
-    <div class="tags" style="margin-top:0.6rem">
-      <span class="tag">Ultrasound Imaging</span>
-      <span class="tag">Machine Learning</span>
-      <span class="tag">3D Reconstruction</span>
-      <span class="tag">Graph Neural Networks</span>
-      <span class="tag">Segmentation</span>
-      <span class="tag">Quantum Computing</span>
-      <span class="tag">Quantitative Ultrasound</span>
-      <span class="tag">Image Processing</span>
-    </div>
-  </section>
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+      <div class="hero-card">
+        <div class="hero-profile-container">
+          <div class="avatar-wrapper">
+            <img class="hero-avatar" src="avatar.jpg" alt="Logiraj Kumaralingam">
+            <span class="status-indicator" title="PhD Candidate, UAlberta (2023 - 2027)"></span>
+          </div>
+        </div>
 
-  <section id="research">
-    <h2>Research</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Freehand 3D intraoral ultrasound</h3>
-        <p>A portable system for real-time 3D reconstruction of intraoral structures, validated on phantoms and ex-vivo models.</p>
+        <div class="hero-content">
+          <div class="badge-tag-row">
+            <span class="pill-badge pill-primary">PhD Candidate</span>
+            <span class="pill-badge pill-secondary">Medical Sciences</span>
+            <span class="pill-badge pill-outline">Expected May 2027</span>
+          </div>
+
+          <h1 class="hero-name">Logiraj Kumaralingam</h1>
+          <p class="hero-affiliation">
+            Department of Radiology &amp; Diagnostic Imaging &middot; <strong>University of Alberta</strong>, Canada
+          </p>
+
+          <p class="hero-bio-lead">
+            I develop machine learning algorithms for biomedical ultrasound, focusing on <strong>real-time 3D reconstruction</strong> of intraoral structures, radiation-free periodontal diagnostics, and quantitative pediatric imaging under the supervision of <strong>Prof. Lawrence H. Le</strong>.
+          </p>
+
+          <!-- Quick Action Links -->
+          <div class="hero-links">
+            <a class="btn btn-primary" href="mailto:logiraj@ualberta.ca">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>logiraj@ualberta.ca</span>
+            </a>
+            <a class="btn btn-secondary" href="cv.pdf" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <span>Curriculum Vitae</span>
+            </a>
+            <a class="btn btn-outline" href="https://scholar.google.com/scholar?q=Logiraj+Kumaralingam" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+              <span>Google Scholar</span>
+            </a>
+            <a class="btn btn-outline" href="https://github.com/BioMedCom" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              <span>GitHub</span>
+            </a>
+            <a class="btn btn-outline" href="https://www.linkedin.com/in/logiraj" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              <span>LinkedIn</span>
+            </a>
+            <span class="badge-detail" title="Web of Science Researcher ID">
+              <span class="badge-label">Web of Science:</span> <strong>OOL-0883-2025</strong>
+            </span>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <h3>Periodontal analysis in ultrasound video</h3>
-        <p>Landmark detection, one-shot segmentation, and automatic assessment of the periodontium (DetSegDiff, OralSAM).</p>
+
+      <!-- KEY METRICS / STATS BAR -->
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <div class="metric-number">30+</div>
+          <div class="metric-label">Publications &amp; Abstracts</div>
+          <div class="metric-sub">MedIA, JDR, JCC, IEEE TIM, MICCAI</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-number">$750K+</div>
+          <div class="metric-label">Grants Coordinated</div>
+          <div class="metric-sub">NSERC Discovery, NFRF, Alberta Innovates</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-number">$140K+</div>
+          <div class="metric-label">Scholarships &amp; Awards</div>
+          <div class="metric-sub">Alberta Innovates ($124k), AGES ($12k)</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-number">12+</div>
+          <div class="metric-label">Students Mentored</div>
+          <div class="metric-sub">MSc, Residents, Undergraduates</div>
+        </div>
       </div>
-      <div class="card">
-        <h3>Pediatric IBD ultrasound</h3>
-        <p>AI-assisted bowel wall thickness measurement and texture analysis, expanding to a multi-centre collaboration across Alberta and British Columbia.</p>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section-block">
+      <div class="section-header">
+        <h2 class="section-title">About Me</h2>
+        <span class="section-subtitle">Biography &amp; Core Interests</span>
       </div>
-      <div class="card">
-        <h3>Neural implicit reconstruction</h3>
-        <p>Geometric-constraint models for surface reconstruction of freehand 3D ultrasound, including carotid imaging.</p>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I am a PhD Candidate in Medical Sciences within the <strong>Department of Radiology and Diagnostic Imaging</strong> at the <strong>University of Alberta</strong>, working under the guidance of <strong>Prof. Lawrence H. Le</strong>. My doctoral dissertation, <em>"Advancing Dental Imaging: 3D Reconstruction of Intraoral Structures using High-frequency Ultrasound with Machine Learning"</em>, tackles the fundamental challenges of radiation-free 3D intraoral imaging for periodontal and orthodontic diagnosis.
+          </p>
+          <p>
+            Prior to joining the University of Alberta, I graduated with a <strong>First-Class Honours BSc in Computer Science</strong> (GPA 3.81/4.00) from Eastern University, Sri Lanka, where I developed deep learning algorithms on 3D curves for whole-brain white matter tractography. Following my undergraduate degree, I served as a <strong>Lecturer in Information Technology</strong> at Eastern University and an <strong>Instructor in Computer Science</strong> at the University of Jaffna.
+          </p>
+          <p>
+            My current research bridges medical ultrasonics, computer vision, and machine learning: developing real-time freehand 3D ultrasound reconstruction systems, foundation-model adaptions for ultrasound segmentation (such as <strong>OralSAM</strong>), diffusion-based landmark detection (<strong>DetSegDiff</strong>), and extending AI ultrasound analytics to pediatric inflammatory bowel disease (IBD), carotid neural implicit representations, and quantum-classical models for Alzheimer's disease.
+          </p>
+        </div>
+
+        <div class="about-sidebar">
+          <div class="sidebar-card">
+            <h3 class="sidebar-heading">Research Domains</h3>
+            <div class="tags-cloud">
+              <span class="tag-chip">3D Ultrasound Imaging</span>
+              <span class="tag-chip">Deep Learning &amp; Computer Vision</span>
+              <span class="tag-chip">OralSAM &amp; Segmentation</span>
+              <span class="tag-chip">Diffusion Models (DetSegDiff)</span>
+              <span class="tag-chip">Graph Neural Networks</span>
+              <span class="tag-chip">Neural Implicit Surfaces (NeRF/UDF)</span>
+              <span class="tag-chip">Pediatric Intestinal Ultrasound</span>
+              <span class="tag-chip">Quantum-Inspired Vision Transformers</span>
+              <span class="tag-chip">Quantitative Ultrasound (QUS)</span>
+              <span class="tag-chip">Brain Tractography</span>
+            </div>
+          </div>
+
+          <div class="sidebar-card">
+            <h3 class="sidebar-heading">Education</h3>
+            <div class="timeline-compact">
+              <div class="timeline-item">
+                <span class="time-year">2023 &ndash; 2027</span>
+                <div class="time-content">
+                  <strong>PhD in Medical Sciences</strong>
+                  <div class="time-sub">University of Alberta, Canada</div>
+                  <div class="time-note">Supervisor: Prof. Lawrence H. Le</div>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <span class="time-year">2022</span>
+                <div class="time-content">
+                  <strong>MSc in Medical Sciences</strong>
+                  <div class="time-sub">University of Alberta (Transferred to PhD)</div>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <span class="time-year">2017 &ndash; 2021</span>
+                <div class="time-content">
+                  <strong>BSc (Hons) in Computer Science</strong>
+                  <div class="time-sub">Eastern University, Sri Lanka &middot; First Class (GPA 3.81/4.00)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <h3>Brain connectivity and quantum ML</h3>
-        <p>Graph attention networks and quantum-inspired transformers for Alzheimer's disease and neurological classification.</p>
+    </section>
+
+    <!-- NEWS SECTION -->
+    <section id="news" class="section-block">
+      <div class="section-header">
+        <h2 class="section-title">Latest News &amp; Milestones</h2>
+        <span class="section-subtitle">Recent publications, talks, and grant achievements</span>
       </div>
-      <div class="card">
-        <h3>Living Muscle Twin</h3>
-        <p>Machine learning with quantitative ultrasound for an AI-driven digital twin predicting muscle health.</p>
+
+      <div class="news-list">
+        <div class="news-item">
+          <div class="news-date">Jul 2026</div>
+          <div class="news-content">
+            <strong>Invited Talk at Fudan University:</strong> Delivered an invited talk on <em>"Artificial Intelligence-driven Ultrasound Imaging: From Real-time 3D Reconstruction to Precision Healthcare"</em> at the Department of Biomedical Engineering, Fudan University, Shanghai, China.
+          </div>
+        </div>
+        <div class="news-item">
+          <div class="news-date">May 2026</div>
+          <div class="news-content">
+            <strong>Best Poster Presentation:</strong> Awarded Best Poster Presentation at the Faculty of Engineering Graduate Research Symposium (FEGRS), University of Alberta.
+          </div>
+        </div>
+        <div class="news-item">
+          <div class="news-date">Apr 2026</div>
+          <div class="news-content">
+            <strong>IEEE TIM Paper Accepted:</strong> Co-first author paper <em>"Development and Validation of a Freehand 3D Ultrasound System for Real-Time Intraoral Image Reconstruction"</em> accepted in <strong>IEEE Transactions on Instrumentation and Measurement</strong> (DOI: 10.1109/TIM.2026.3690813).
+          </div>
+        </div>
+        <div class="news-item">
+          <div class="news-date">2025</div>
+          <div class="news-content">
+            <strong>Journal of Dental Research &amp; JCC:</strong> Published first-author papers on automated periodontium assessment in intraoral ultrasound (<em>Journal of Dental Research</em>) and AI-assisted pediatric bowel wall thickness assessment (<em>Journal of Crohn's and Colitis</em>, IF: 10.3).
+          </div>
+        </div>
+        <div class="news-item">
+          <div class="news-date">2025</div>
+          <div class="news-content">
+            <strong>MICCAI 2025:</strong> Presented <em>OralSAM: One-Shot Segmentation for Intraoral Ultrasound Videos with Adaptive Feature Correlation and Self-prompting Strategy</em> in Springer LNCS.
+          </div>
+        </div>
+        <div class="news-item">
+          <div class="news-date">Oct 2025</div>
+          <div class="news-content">
+            <strong>$200,000 NSERC Discovery Grant Awarded:</strong> Coordinated the successful research proposal for a compact AI-driven portable freehand 3D intraoral ultrasound system.
+          </div>
+        </div>
       </div>
+    </section>
+
+    <!-- RESEARCH HIGHLIGHTS SECTION -->
+    <section id="research" class="section-block">
+      <div class="section-header">
+        <h2 class="section-title">Research Highlights</h2>
+        <span class="section-subtitle">Core themes in medical imaging &amp; applied artificial intelligence</span>
+      </div>
+
+      <div class="research-grid">
+        <!-- Project 1 -->
+        <article class="research-card">
+          <div class="research-icon">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+          </div>
+          <div class="research-body">
+            <div class="card-badge">Lead Researcher</div>
+            <h3>Freehand 3D Intraoral Ultrasound</h3>
+            <p>
+              Engineering a compact, real-time 3D freehand ultrasound reconstruction system for dental and periodontal scanning. Incorporates sensor tracking, volume compounding, and spatial calibration validated across tissue-mimicking phantoms and pre-clinical ex-vivo porcine models.
+            </p>
+            <div class="card-meta">
+              <span class="meta-tag">IEEE TIM 2026</span>
+              <span class="meta-tag">IEEE IUS</span>
+              <span class="meta-tag">3D Volumetric Imaging</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="research-card">
+          <div class="research-icon">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M8 12s1.5-2 4-2 4 2 4 2-1.5 2-4 2-4-2-4-2z"></path><circle cx="12" cy="12" r="1"></circle></svg>
+          </div>
+          <div class="research-body">
+            <div class="card-badge">Lead Developer</div>
+            <h3>OralSAM &amp; DetSegDiff: Periodontal AI</h3>
+            <p>
+              Developed <strong>OralSAM</strong>, a one-shot segmentation framework for intraoral ultrasound videos utilizing adaptive feature correlation and self-prompting strategies, alongside <strong>DetSegDiff</strong>, an edge-enhanced diffusion network for simultaneous landmark detection and periodontium boundary segmentation.
+            </p>
+            <div class="card-meta">
+              <span class="meta-tag">JDR 2025</span>
+              <span class="meta-tag">MICCAI 2025</span>
+              <span class="meta-tag">Comp. Bio. Med. 2024</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="research-card">
+          <div class="research-icon">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+          </div>
+          <div class="research-body">
+            <div class="card-badge">Co-Investigator</div>
+            <h3>Pediatric Intestinal Ultrasound &amp; SmartIUS</h3>
+            <p>
+              AI-assisted automatic bowel wall thickness measurement and multi-scale texture classification for pediatric Inflammatory Bowel Disease (IBD). Powering the <strong>SmartIUS</strong> handheld initiative spanning collaborative validation across the University of Alberta, UBC, and the University of Calgary.
+            </p>
+            <div class="card-meta">
+              <span class="meta-tag">J. Crohn's &amp; Colitis (IF: 10.3)</span>
+              <span class="meta-tag">BSPC</span>
+              <span class="meta-tag">Point-of-Care</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="research-card">
+          <div class="research-icon">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+          </div>
+          <div class="research-body">
+            <div class="card-badge">Co-First Author</div>
+            <h3>Neural Implicit Surface Reconstruction</h3>
+            <p>
+              Formulated geometric-constraint neural implicit representations using unsigned distance functions (UDF) to reconstruct smooth, continuous 3D surfaces from sparse and noisy freehand ultrasound volumes, applied to carotid artery and musculoskeletal anatomy.
+            </p>
+            <div class="card-meta">
+              <span class="meta-tag">Medical Image Analysis (IF: 11.8)</span>
+              <span class="meta-tag">Neural Surfaces</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="research-card">
+          <div class="research-icon">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+          </div>
+          <div class="research-body">
+            <div class="card-badge">Lead Author</div>
+            <h3>Quantum ML &amp; Brain Connectivity</h3>
+            <p>
+              Investigating hybrid quantum-classical vision transformers with variational quantum circuits (VQC) and explainable Graph Attention Networks (GAT) to model structural brain connectivity networks for early diagnosis of Alzheimer's and Parkinson's disease.
+            </p>
+            <div class="card-meta">
+              <span class="meta-tag">IEEE JBHI (Under Review)</span>
+              <span class="meta-tag">Qiskit &amp; PennyLane</span>
+              <span class="meta-tag">Graph ML</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 6 -->
+        <article class="research-card">
+          <div class="research-icon">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+          </div>
+          <div class="research-body">
+            <div class="card-badge">Research Coordinator</div>
+            <h3>The Living Muscle Twin</h3>
+            <p>
+              Constructing an AI-driven dynamic digital twin that integrates quantitative ultrasound (QUS) biomarkers with patient physiological metrics to predict longitudinal muscle health, sarcopenia progression, and body composition changes.
+            </p>
+            <div class="card-meta">
+              <span class="meta-tag">NFRF Exploration</span>
+              <span class="meta-tag">Digital Twin</span>
+              <span class="meta-tag">Quantitative Ultrasound</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PUBLICATIONS SECTION -->
+    <section id="publications" class="section-block">
+      <div class="section-header">
+        <h2 class="section-title">Publications &amp; Preprints</h2>
+        <span class="section-subtitle">Peer-reviewed journals, conferences, and manuscripts under review</span>
+      </div>
+
+      <!-- Publication Filter & Search Bar -->
+      <div class="pub-controls">
+        <div class="pub-filter-tabs">
+          <button class="filter-btn active" data-filter="all">All (30+)</button>
+          <button class="filter-btn" data-filter="journal">Journals</button>
+          <button class="filter-btn" data-filter="conference">Conferences</button>
+          <button class="filter-btn" data-filter="review">Under Review</button>
+        </div>
+        <div class="pub-search-box">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="text" id="pubSearch" placeholder="Filter by title, author, keyword...">
+        </div>
+      </div>
+
+      <div class="pub-list" id="pubList">
+
+        <!-- UNDER REVIEW -->
+        <div class="pub-card" data-category="review">
+          <div class="pub-badge-row">
+            <span class="badge-type badge-review">Under Review</span>
+            <span class="badge-if">IF: 7.7</span>
+          </div>
+          <h3 class="pub-title">A Quantum-Inspired Vision Transformer for Early Diagnosis of Alzheimer's Disease Using Structural Brain Connectivity Networks</h3>
+          <p class="pub-authors"><strong class="highlight-author">Kumaralingam, L.</strong>, Sivaanpu, A., Hoang, M.-H., Jegatheeswaran, T., Hareendranathan, A., Simpson, A. L., Srivishagan, S., Ratnarajah, N., Le, L. H.</p>
+          <p class="pub-venue"><em>IEEE Journal of Biomedical and Health Informatics</em>, 2026.</p>
+        </div>
+
+        <div class="pub-card" data-category="review">
+          <div class="pub-badge-row">
+            <span class="badge-type badge-review">Under Review</span>
+            <span class="badge-tag-special">Co-First Author</span>
+            <span class="badge-if">IF: 5.7</span>
+          </div>
+          <h3 class="pub-title">Texture Analysis for Pediatric Bowel Ultrasound Pathology Classification with Graph Attention Networks</h3>
+          <p class="pub-authors">Hoang, M. H.*, <strong class="highlight-author">Kumaralingam, L.*</strong>, Sivaanpu, A., Alavi, J., Zheng, R., Hudson, A., Huynh, H. Q., Lou, E. H., Le, L. H.</p>
+          <p class="pub-venue"><em>Biomedical Signal Processing and Control</em>, 2026.</p>
+        </div>
+
+        <div class="pub-card" data-category="review">
+          <div class="pub-badge-row">
+            <span class="badge-type badge-review">Under Review</span>
+            <span class="badge-if">IF: 6.4</span>
+          </div>
+          <h3 class="pub-title">Ultrasound Denoising Network: Applications in Intraoral 2D Ultrasound Videos and 3D Imaging</h3>
+          <p class="pub-authors">Sivaanpu, A., <strong class="highlight-author">Kumaralingam, L.</strong>, Alavi, J., Zheng, R., Ta, D., Punithakumar, K., Noga, M., Lou, E. H. M., Le, L. H.</p>
+          <p class="pub-venue"><em>Computer Methods and Programs in Biomedicine</em>, 2026.</p>
+        </div>
+
+        <!-- REFEREED JOURNALS -->
+        <div class="pub-card" data-category="journal">
+          <div class="pub-badge-row">
+            <span class="badge-type badge-journal">Journal Article</span>
+            <span class="badge-tag-special">Co-First Author</span>
+            <span class="badge-if">IF: 5.9</span>
+          </div>
+          <h3 class="pub-title">Development and Validation of a Freehand 3D Ultrasound System for Real-Time Intraoral Image Reconstruction</h3>
+          <p class="pub-authors">Chen, H.*, <strong class="highlight-author">Kumaralingam, L.*</strong>, Alavi, J.*, Nguyen, K. C. T., La, T. G., Zheng, R., Hoang, T. H., Ta, D., Punithakumar, K., Noga, M., Major, P. W., Lou, E. H. M., Le, L. H.</p>
+          <p class="pub-venue"><em>IEEE Transactions on Instrumentation and Measurement</em>, 2026. DOI: 10.1109/TIM.2026.3690813</p>
+          <div class="pub-actions">
+            <a class="pub-btn" href="https://doi.org/10.1109/TIM.2026.3690813" target="_blank" rel="noopener">DOI</a>
+          </div>
+        </div>
+
+        <div class="pub-card" data-category="journal">
+          <div class="pub-badge-row">
+            <span class="badge-type badge-journal">Journal Article</span>
+            <span class="badge-if">IF: 5.9</span>
+          </div>
+          <h3 class="pub-title">Accuracy and Reliability of Periodontal Measurements using Oral Sonograms</h3>
+          <p class="pub-authors">Wang, J., Nguyen, K. C. T., Graf-Alexiou, L., Hoang, T., <strong class="highlight-author">Kumaralingam, L.</strong>, Li, M., La, T. G., Kaipatur, N., Lou, E. H. M., Major, P., Le, L. H.</p>
+          <p class="pub-venue"><em>Journal of Dental Research</em>, 2025. DOI: 10.1177/002203452614469</p>
+          <div class="pub-actions">
+            <a class="pub-btn" href="https://doi.org/10.1177/002203452614469" target="_blank" rel="noopener">DOI</a>
+          </div>
+        </div>
+
+        <div class="pub-card" data-category="journal">
+          <div class="pub-badge-row">
+            <span class="badge-type badge-journal">Journal Article</span>
+            <span class="badge-tag-special">First Author</span>
+            <span class="badge-if">IF: 5.9</span>
+          </div>
+          <h3 class="pub-title">Automatic Assessment of Periodontium Complex in Intraoral Ultrasound Videos</h3>
+          <p class="pub-authors"><strong class="highlight-author">Kumaralingam, L.</strong>, Hoang, M. H., Nguyen, K. C. T., Kaipatur, N. R., Dinh, H. B. V., Alavi, J., Punithakumar, K., Lou, E. H. M., Major, P. W., Le, L. H.</p>
+          <p class="pub-venue"><em>Journal of Dental Research</em>, 2025. DOI: 10.1177/00220345251387713</p>
+          <div class="pub-actions">
+            <a class="pub-btn" href="https://doi.org/10.1177/00220345251387713" target="_blank" rel="noopener">DOI</a>
+          </div>
+        </div>
+
+        <div class="pub-card" data-category="journal">
+          <div class="pub-badge-row">
+            <span class="badge-type badge-journal">Journal Article</span>
+            <span class="badge-tag-special">First Author</span>
+            <span class="badge-if">IF: 10.3</span>
+          </div>
+          <h3 class="pub-title">Artificial Intelligence-Assisted Approach to Assessing Bowel Wall Thickness in Pediatric Inflammatory Bowel Disease Using Intestinal Ultrasound Images</h3>
+          <p class="pub-authors"><strong class="highlight-author">Kumaralingam, L.</strong>, Le May, K., Dang, V. B., Alavi, J., Huynh, H. Q., Le, L. H.</p>
+          <p class="pub-venue"><em>Journal of Crohn's and Colitis</em>, 19(4), jjaf037, 2025. DOI: 10.1093/ecco-jcc/jjaf037</p>
+          <div class="pub-actions">
+            <a class="pub-btn" href="https://doi.org/10.1093/ecco-jcc/jjaf037" target="_blank" rel="noopener">DOI</a>
+          </div>
+        </div>
+
+        <div class="pub-card" data-category="journal">
+          <div class="pub-badge-row">
+            <span class="badge-type badge-journal">Journal Article</span>
+            <span class="badge-tag-special">First Author</span>
+            <span class="badge-if">IF: 6.3</span>
+          </div>
+          <h3 class="pub-title">DetSegDiff: A Joint Periodontal Landmark Detection and Segmentation in Intraoral Ultrasound Using Edge-Enhanced Diffusion-Based Network</h3>
+          <p class="pub-authors"><strong class="highlight-author">Kumaralingam, L.</strong>, Dinh, H. B., Nguyen, K. C. T., Punithakumar, K., La, T. G., Lou, E. H., Major, P. W., Le, L. H.</p>
+          <p class="pub-venue"><em>Computers in Biology and Medicine</em>, 182, 109174, 2024. DOI: 10.1016/j.compbiomed.2024.109174</p>
+          <div class="pub-actions">
+            <a class="pub-btn" href="https://doi.org/10.1016/j.compbiomed.2024.109174" target="_blank" rel="noopener">DOI</a>
+          </div>
+        </div>
+
+        <div class="pub-card" data-category="journal">
+          <div class="pub-badge-row">
+            <span class="badge-type badge-journal">Journal Article</span>
+            <span class="badge-tag-special">Co-First Author</span>
+            <span class="badge-if">IF: 11.8</span>
+          </div>
+          <h3 class="pub-title">Neural Implicit Surface Reconstruction of Freehand 3D Ultrasound Volume with Geometric Constraints</h3>
+          <p class="pub-authors">Chen, H.*, <strong class="highlight-author">Kumaralingam, L.*</strong>, Zhang, S., Song, S., Zhang, F., Zhang, H., Pham, T. T., Punithakumar, K., Lou, E. H., Zhang, Y., Le, L. H.</p>
+          <p class="pub-venue"><em>Medical Image Analysis</em>, 98, 103305, 2024. DOI: 10.1016/j.media.2024.103305</p>
+          <div class="pub-actions">
+            <a class="pub-btn" href="https://doi.org/10.1016/j.media.2024.103305" target="_blank" rel="noopener">DOI</a>
+          </div>
+        </div>
+
+        <div class="pub-card" data-category="journal">
+          <div class="pub-badge-row">
+            <span class="badge-type badge-journal">Journal Article</span>
+            <span class="badge-if">IF: 2.1</span>
+          </div>
+          <h3 class="pub-title">Discriminative Patterns of White Matter Changes in Alzheimer's</h3>
+          <p class="pub-authors">Srivishagan, S., <strong class="highlight-author">Kumaralingam, L.</strong>, Thanikasalam, K., Pinidiyaarachchi, U. A. J., Ratnarajah, N., ADNI.</p>
+          <p class="pub-venue"><em>Psychiatry Research: Neuroimaging</em>, 328, 111576, 2023. DOI: 10.1016/j.pscychresns.2022.111576</p>
+          <div class="pub-actions">
+            <a class="pub-btn" href="https://doi.org/10.1016/j.pscychresns.2022.111576" target="_blank" rel="noopener">DOI</a>
+          </div>
+        </div>
+
+        <!-- REFEREED CONFERENCES -->
+        <div class="pub-card" data-category="conference">
+          <div class="pub-badge-row">
+            <span class="badge-type badge-conf">MICCAI</span>
+            <span class="badge-tag-special">Flagship Conference</span>
+          </div>
+          <h3 class="pub-title">OralSAM: One-Shot Segmentation for Intraoral Ultrasound Videos with Adaptive Feature Correlation and Self-Prompting Strategy</h3>
+          <p class="pub-authors"><strong class="highlight-author">Kumaralingam, L.</strong>, Sivaanpu, A., Hoang, M. H., Alavi, J., Nguyen, K. C. T., Punithakumar, K., Lou, E. H., Major, P., Le, L. H.</p>
+          <p class="pub-venue"><em>International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI)</em>, Springer LNCS, pp. 390-399, 2025. DOI: 10.1007/978-3-032-04981-0_37</p>
+          <div class="pub-actions">
+            <a class="pub-btn" href="https://doi.org/10.1007/978-3-032-04981-0_37" target="_blank" rel="noopener">DOI</a>
+          </div>
+        </div>
+
+        <div class="pub-card" data-category="conference">
+          <div class="pub-badge-row">
+            <span class="badge-type badge-conf">MICCAI</span>
+            <span class="badge-tag-special">Oral &amp; Travel Award</span>
+          </div>
+          <h3 class="pub-title">Segmentation of Whole-Brain Tractography: A Deep Learning Algorithm Based on 3D Raw Curve Points</h3>
+          <p class="pub-authors"><strong class="highlight-author">Kumaralingam, L.</strong>, Thanikasalam, K., Sotheeswaran, S., Mahadevan, J., Ratnarajah, N.</p>
+          <p class="pub-venue"><em>International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI)</em>, Springer LNCS, pp. 185-195, 2022. DOI: 10.1007/978-3-031-16431-6_18</p>
+          <div class="pub-actions">
+            <a class="pub-btn" href="https://doi.org/10.1007/978-3-031-16431-6_18" target="_blank" rel="noopener">DOI</a>
+          </div>
+        </div>
+
+        <div class="pub-card" data-category="conference">
+          <div class="pub-badge-row">
+            <span class="badge-type badge-conf">IEEE Conference</span>
+          </div>
+          <h3 class="pub-title">Gradient-Based Explainable Graph Attention Networks for Parkinson's Disease Classification Using Feature-Informed Structural Brain Networks</h3>
+          <p class="pub-authors">Ratnarajah, N., <strong class="highlight-author">Kumaralingam, L.</strong>, Srivishagan, S., Varatharasa, V., Thuraisamy, V., Ilakkanakumaran, H.</p>
+          <p class="pub-venue"><em>IEEE Moratuwa Engineering Research Conference (MERCon)</em>, pp. 373-378, 2026. DOI: 10.1109/MERCon71835.2026.11691565</p>
+          <div class="pub-actions">
+            <a class="pub-btn" href="https://doi.org/10.1109/MERCon71835.2026.11691565" target="_blank" rel="noopener">DOI</a>
+          </div>
+        </div>
+
+        <div class="pub-card" data-category="conference">
+          <div class="pub-badge-row">
+            <span class="badge-type badge-conf">IEEE Conference</span>
+            <span class="badge-tag-special">Co-First Author</span>
+          </div>
+          <h3 class="pub-title">A MedViT-Inspired Hybrid CNN-Transformer Framework for Thyroid Nodule Classification</h3>
+          <p class="pub-authors">Jegatheeswaran, T.*, <strong class="highlight-author">Kumaralingam, L.*</strong>, Sivaanpu, A., Hoang, M. H., Ta, D., Fung, C. I., Le, L. H., Ratnarajah, N.</p>
+          <p class="pub-venue"><em>IEEE Eleventh International Conference on Communications and Electronics (ICCE)</em>, pp. 685-690, 2026. DOI: 10.1109/ICCE70609.2026.11658463</p>
+          <div class="pub-actions">
+            <a class="pub-btn" href="https://doi.org/10.1109/ICCE70609.2026.11658463" target="_blank" rel="noopener">DOI</a>
+          </div>
+        </div>
+
+        <div class="pub-card" data-category="conference">
+          <div class="pub-badge-row">
+            <span class="badge-type badge-conf">IEEE Conference</span>
+          </div>
+          <h3 class="pub-title">Quantitative Texture Analysis of Intestinal Ultrasound in Pediatric Inflammatory Bowel Disease</h3>
+          <p class="pub-authors">Hoang, M. H., <strong class="highlight-author">Kumaralingam, L.</strong>, Sivaanpu, A., Alavi, J., Zheng, R., Hudson, A., Huynh, H. Q., Lou, E. H., Le, L. H.</p>
+          <p class="pub-venue"><em>IEEE Eleventh International Conference on Communications and Electronics (ICCE)</em>, pp. 697-702, 2026. DOI: 10.1109/ICCE70609.2026.11658419</p>
+          <div class="pub-actions">
+            <a class="pub-btn" href="https://doi.org/10.1109/ICCE70609.2026.11658419" target="_blank" rel="noopener">DOI</a>
+          </div>
+        </div>
+
+        <div class="pub-card" data-category="conference">
+          <div class="pub-badge-row">
+            <span class="badge-type badge-conf">IADR / AADOCR</span>
+          </div>
+          <h3 class="pub-title">Deep Learning-Based Quantitative Assessment of Periodontal Structures in Ultrasound Videos</h3>
+          <p class="pub-authors"><strong class="highlight-author">Kumaralingam, L.</strong>, Dinh, H. B., Nguyen, K. C. T., Punithakumar, K., La, T. G., Lou, E. H., Major, P. W., Le, L. H.</p>
+          <p class="pub-venue"><em>IADR/AADOCR/CADR General Session &amp; Exhibition</em>, New Orleans, USA, 2024.</p>
+        </div>
+
+        <div class="pub-card" data-category="conference">
+          <div class="pub-badge-row">
+            <span class="badge-type badge-conf">IADR / AADOCR</span>
+          </div>
+          <h3 class="pub-title">3D Ultrasound Imaging for Alveolar Bone Level: An Ex-Vivo Study</h3>
+          <p class="pub-authors"><strong class="highlight-author">Kumaralingam, L.</strong>, Alavi, J., Nguyen, K.-C. T., La, T.-G., Punithakumar, K., Alexiou, M., Major, P. W., Lou, E. H., Le, L. H.</p>
+          <p class="pub-venue"><em>IADR/AADOCR/CADR General Session &amp; Exhibition</em>, New Orleans, USA, 2024.</p>
+        </div>
+
+        <div class="pub-card" data-category="conference">
+          <div class="pub-badge-row">
+            <span class="badge-type badge-conf">IEEE Conference</span>
+            <span class="badge-tag-special">Best Paper Award</span>
+          </div>
+          <h3 class="pub-title">Automatic Identification of Sri Lankan Butterfly Families Using Ensemble Deep Learning</h3>
+          <p class="pub-authors">Nadarashalingham, T., <strong class="highlight-author">Kumaralingam, L.</strong>, Thanabalasingam, K., Thirunavukkarasu, J., Ratnarajah, N.</p>
+          <p class="pub-venue"><em>IEEE 5th International Conference on Advancements in Computing (ICAC)</em>, pp. 633-638, 2023. DOI: 10.1109/ICAC60630.2023.10417475</p>
+          <div class="pub-actions">
+            <a class="pub-btn" href="https://doi.org/10.1109/ICAC60630.2023.10417475" target="_blank" rel="noopener">DOI</a>
+          </div>
+        </div>
+
+        <div class="pub-card" data-category="conference">
+          <div class="pub-badge-row">
+            <span class="badge-type badge-conf">IEEE IUS</span>
+          </div>
+          <h3 class="pub-title">Fully-Automated Alveolar Bone Level Measurements in Adolescents via Landmark Localization in Intraoral Ultrasound Videos</h3>
+          <p class="pub-authors"><strong class="highlight-author">Kumaralingam, L.</strong>, Dinh, H. B., Nguyen, K. C. T., Punithakumar, K., Kaipatur, N. R., Lou, E. H., Major, P. W., Le, L. H.</p>
+          <p class="pub-venue"><em>IEEE International Ultrasonics Symposium (IUS)</em>, Montreal, Canada, 2023. DOI: 10.1109/IUS51837.2023.10308346</p>
+          <div class="pub-actions">
+            <a class="pub-btn" href="https://doi.org/10.1109/IUS51837.2023.10308346" target="_blank" rel="noopener">DOI</a>
+          </div>
+        </div>
+
+        <div class="pub-card" data-category="conference">
+          <div class="pub-badge-row">
+            <span class="badge-type badge-conf">IEEE IUS</span>
+          </div>
+          <h3 class="pub-title">Three-Dimensional Intraoral Imaging Using a Portable 3D Freehand Ultrasound System: A Phantom Study</h3>
+          <p class="pub-authors">Alavi, J., Chen, H., Nguyen, K. C. T., La, T. G., <strong class="highlight-author">Kumaralingam, L.</strong>, Punithakumar, K., Alexiou, M., Lou, E. H., Noga, M., Major, P. W., Le, L. H.</p>
+          <p class="pub-venue"><em>IEEE International Ultrasonics Symposium (IUS)</em>, Montreal, Canada, 2023. DOI: 10.1109/IUS51837.2023.10308083</p>
+          <div class="pub-actions">
+            <a class="pub-btn" href="https://doi.org/10.1109/IUS51837.2023.10308083" target="_blank" rel="noopener">DOI</a>
+          </div>
+        </div>
+
+        <div class="pub-card" data-category="conference">
+          <div class="pub-badge-row">
+            <span class="badge-type badge-conf">IEEE IUS</span>
+          </div>
+          <h3 class="pub-title">Neural Implicit Representation for Three-Dimensional Ultrasound Carotid Surface Reconstruction Using Unsigned Distance Function</h3>
+          <p class="pub-authors">Chen, H., <strong class="highlight-author">Kumaralingam, L.</strong>, Li, J., Punithakumar, K., Le, L. H., Zheng, R.</p>
+          <p class="pub-venue"><em>IEEE International Ultrasonics Symposium (IUS)</em>, Montreal, Canada, 2023. DOI: 10.1109/IUS51837.2023.10307668</p>
+          <div class="pub-actions">
+            <a class="pub-btn" href="https://doi.org/10.1109/IUS51837.2023.10307668" target="_blank" rel="noopener">DOI</a>
+          </div>
+        </div>
+
+        <div class="pub-card" data-category="conference">
+          <div class="pub-badge-row">
+            <span class="badge-type badge-conf">IEEE Conference</span>
+            <span class="badge-tag-special">Excellent Paper Award</span>
+          </div>
+          <h3 class="pub-title">Tract-Net: A Deep Learning Approach on 3D Curves for Segmenting White Matter Fibre Bundles</h3>
+          <p class="pub-authors"><strong class="highlight-author">Kumaralingam, L.</strong>, Thanikasalam, K., Sotheeswaran, S., Ratnarajah, N.</p>
+          <p class="pub-venue"><em>IEEE 21st International Conference on Advances in ICT for Emerging Regions (ICTer)</em>, pp. 75-80, 2021. DOI: 10.1109/ICter53630.2021.9774801</p>
+          <div class="pub-actions">
+            <a class="pub-btn" href="https://doi.org/10.1109/ICter53630.2021.9774801" target="_blank" rel="noopener">DOI</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="section-footer-note">
+        <p>A full chronological listing of all 30+ journal articles, refereed proceedings, and conference abstracts is maintained in the <a href="cv.pdf" target="_blank">curriculum vitae (PDF)</a>.</p>
+      </div>
+    </section>
+
+    <!-- GRANTS & RESEARCH COORDINATION SECTION -->
+    <section id="grants" class="section-block">
+      <div class="section-header">
+        <h2 class="section-title">Grants &amp; Project Leadership</h2>
+        <span class="section-subtitle">Research coordination &amp; major grant applications</span>
+      </div>
+
+      <div class="grants-grid">
+        <div class="grant-card featured-grant">
+          <div class="grant-status-badge status-awarded">Awarded &middot; $200,000 CAD</div>
+          <h3 class="grant-title">Compact AI-Driven Portable Freehand 3D Intraoral Ultrasound System for Precision Periodontal-Orthodontic Care</h3>
+          <p class="grant-agency"><strong>NSERC Discovery Grant</strong> &middot; University of Alberta (2025)</p>
+          <p class="grant-role"><strong>Role:</strong> Research Coordinator &middot; Principal Investigator: Prof. Lawrence H. Le</p>
+          <p class="grant-desc">
+            Contributed to the initial proposal drafting and comprehensive development of the scientific plan: AI/ML methods, freehand 3D ultrasound reconstruction pipeline, experimental phantom design, preliminary findings, validation strategy, and knowledge translation.
+          </p>
+        </div>
+
+        <div class="grant-card">
+          <div class="grant-status-badge status-submitted">Submitted &middot; $250,000 CAD</div>
+          <h3 class="grant-title">The Living Muscle Twin: An AI-Driven Dynamic Digital Twin for Predicting Muscle Health</h3>
+          <p class="grant-agency"><strong>New Frontiers in Research Fund (NFRF) Exploration</strong> &middot; 2026</p>
+          <p class="grant-role"><strong>Role:</strong> Research Coordinator &middot; Principal Investigator: Prof. Lawrence H. Le</p>
+          <p class="grant-desc">
+            Coordinated proposal development for an AI-driven dynamic digital twin combining quantitative ultrasound and longitudinal physiological analytics, covering EDI considerations, methodology, and multi-departmental collaboration.
+          </p>
+        </div>
+
+        <div class="grant-card">
+          <div class="grant-status-badge status-submitted">Submitted &middot; $300,000 CAD</div>
+          <h3 class="grant-title">SmartIUS: An AI-Enabled Handheld Ultrasound for Point-of-Care Pediatric IBD Assessment</h3>
+          <p class="grant-agency"><strong>NSERC &ndash; Alberta Innovates Advance Stream II</strong> &middot; 2026</p>
+          <p class="grant-role"><strong>Role:</strong> Research Coordinator &middot; Principal Investigator: Prof. Lawrence H. Le</p>
+          <p class="grant-desc">
+            Supported drafting of the AI ultrasound analysis strategy, multi-centre clinical validation workflow (UAlberta, UBC, UCalgary), technical milestones, and point-of-care translational pathway.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- HONORS & AWARDS SECTION -->
+    <section id="awards" class="section-block">
+      <div class="section-header">
+        <h2 class="section-title">Honors, Awards &amp; Fellowships</h2>
+        <span class="section-subtitle">Academic excellence, travel grants, and paper recognitions</span>
+      </div>
+
+      <div class="awards-table-wrapper">
+        <table class="awards-table">
+          <thead>
+            <tr>
+              <th>Year</th>
+              <th>Award / Fellowship</th>
+              <th>Conferring Body / Venue</th>
+              <th>Value / Level</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="award-year">2026</td>
+              <td><strong>Best Poster Presentation</strong></td>
+              <td>Faculty of Engineering Graduate Research Symposium (FEGRS), UAlberta</td>
+              <td><span class="award-pill">Institutional</span></td>
+            </tr>
+            <tr>
+              <td class="award-year">2026</td>
+              <td><strong>Upper Bound 2026 Talent Bursary</strong></td>
+              <td>Alberta Machine Intelligence Institute (Amii)</td>
+              <td><span class="award-val">$750 CAD</span></td>
+            </tr>
+            <tr>
+              <td class="award-year">2026</td>
+              <td><strong>GSA Academic Travel Grant</strong></td>
+              <td>Graduate Students' Association, University of Alberta</td>
+              <td><span class="award-val">$500 CAD</span></td>
+            </tr>
+            <tr>
+              <td class="award-year">2025</td>
+              <td><strong>Andrew Stewart Memorial Graduate Award</strong></td>
+              <td>University of Alberta (Prestige Graduate Honor)</td>
+              <td><span class="award-val">$5,000 CAD</span></td>
+            </tr>
+            <tr>
+              <td class="award-year">2025</td>
+              <td><strong>J Gordin Kaplan Graduate Student Award</strong></td>
+              <td>University of Alberta</td>
+              <td><span class="award-val">$2,000 CAD</span></td>
+            </tr>
+            <tr>
+              <td class="award-year">2025</td>
+              <td><strong>Student Research Grant &ndash; China Institute</strong></td>
+              <td>China Institute, University of Alberta</td>
+              <td><span class="award-val">$1,000 CAD</span></td>
+            </tr>
+            <tr>
+              <td class="award-year">2023 &ndash; 2026</td>
+              <td><strong>Alberta Innovates Graduate Student Scholarship</strong></td>
+              <td>Alberta Innovates (Provincial Excellence Award)</td>
+              <td><span class="award-val award-highlight">$124,000 CAD</span></td>
+            </tr>
+            <tr>
+              <td class="award-year">2023 &ndash; 2024</td>
+              <td><strong>Alberta Graduate Excellence Scholarship (AGES)</strong></td>
+              <td>Government of Alberta</td>
+              <td><span class="award-val">$12,000 CAD</span></td>
+            </tr>
+            <tr>
+              <td class="award-year">2023</td>
+              <td><strong>Best Paper Award</strong></td>
+              <td>IEEE 5th International Conference on Advancements in Computing (ICAC)</td>
+              <td><span class="award-pill">International</span></td>
+            </tr>
+            <tr>
+              <td class="award-year">2022 &ndash; 2024</td>
+              <td><strong>Graduate Student Assistantship</strong></td>
+              <td>University of Alberta</td>
+              <td><span class="award-val">$25,000 CAD</span></td>
+            </tr>
+            <tr>
+              <td class="award-year">2022</td>
+              <td><strong>MICCAI Student Travel Award</strong></td>
+              <td>25th International Conference on MICCAI (Singapore)</td>
+              <td><span class="award-pill">International</span></td>
+            </tr>
+            <tr>
+              <td class="award-year">2021</td>
+              <td><strong>Excellent Paper Award</strong></td>
+              <td>IEEE 21st International Conference on Advances in ICT (ICTer)</td>
+              <td><span class="award-pill">International</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- MENTORING & CO-SUPERVISION SECTION -->
+    <section id="mentoring" class="section-block">
+      <div class="section-header">
+        <h2 class="section-title">Teaching, Mentoring &amp; Student Co-Supervision</h2>
+        <span class="section-subtitle">Dedicated mentorship fostering student-led peer-reviewed papers</span>
+      </div>
+
+      <p class="section-lead">
+        I actively mentor graduate students, medical residents, and undergraduate researchers across deep learning implementation, medical image analysis workflows, and scientific writing, resulting in multiple co-authored journal publications and international conference presentations.
+      </p>
+
+      <div class="mentoring-grid">
+        <div class="mentee-card">
+          <div class="mentee-header">
+            <h4>Manh Hai Hoang</h4>
+            <span class="mentee-role">M.Sc. Student &middot; Univ. of Alberta</span>
+          </div>
+          <p class="mentee-desc">Co-supervised on ultrasound texture analysis and periodontal video processing. Led to co-first-author submissions in <em>Biomedical Signal Processing &amp; Control</em>, <em>Journal of Dental Research</em> (2025), and <em>MICCAI</em> (2025).</p>
+        </div>
+
+        <div class="mentee-card">
+          <div class="mentee-header">
+            <h4>Kenneth N.G.L. May</h4>
+            <span class="mentee-role">Medical Physics Resident &middot; Univ. of Alberta</span>
+          </div>
+          <p class="mentee-desc">Supported automated ultrasound image analysis and machine learning workflows for pediatric IBD, leading to a co-authored journal article in <em>Journal of Crohn's and Colitis</em> (2025).</p>
+        </div>
+
+        <div class="mentee-card">
+          <div class="mentee-header">
+            <h4>Javaneh Alavi</h4>
+            <span class="mentee-role">Research Assistant &middot; Univ. of Alberta</span>
+          </div>
+          <p class="mentee-desc">Guided 3D freehand intraoral ultrasound imaging, tissue phantom experiments, and calibration, resulting in papers at <em>IEEE TIM</em> (2026) and <em>IEEE IUS</em> (2023).</p>
+        </div>
+
+        <div class="mentee-card">
+          <div class="mentee-header">
+            <h4>Hoang B.V. Dinh</h4>
+            <span class="mentee-role">M.Sc. Student &middot; Univ. of Alberta</span>
+          </div>
+          <p class="mentee-desc">Mentored deep learning and landmark localization in intraoral sonography, producing our landmark paper in <em>Computers in Biology and Medicine</em> (2024).</p>
+        </div>
+
+        <div class="mentee-card">
+          <div class="mentee-header">
+            <h4>Clarence Hua &amp; Jamie Kang</h4>
+            <span class="mentee-role">Undergraduate Students &middot; CS, Univ. of Alberta</span>
+          </div>
+          <p class="mentee-desc">Mentored on periodontal pocket depth measurement and multiclass segmentation presented at the 58th Annual Summer Students' Research Day (2025).</p>
+        </div>
+
+        <div class="mentee-card">
+          <div class="mentee-header">
+            <h4>Subaramya Srivishagan</h4>
+            <span class="mentee-role">M.Phil. Candidate &middot; Univ. of Vavuniya</span>
+          </div>
+          <p class="mentee-desc">Guided graph neural network development and neuroimaging analysis for Alzheimer's disease published in <em>Psychiatry Research: Neuroimaging</em> (2023).</p>
+        </div>
+
+        <div class="mentee-card">
+          <div class="mentee-header">
+            <h4>Tuvensha Jegatheeswaran</h4>
+            <span class="mentee-role">Undergraduate Researcher &middot; Univ. of Vavuniya</span>
+          </div>
+          <p class="mentee-desc">Guided MedViT hybrid CNN-Transformer architectures for thyroid nodule classification and chest X-ray diagnosis, published at <em>IEEE ICCE</em> (2026) and <em>IEEE ICARC</em> (2024).</p>
+        </div>
+
+        <div class="mentee-card">
+          <div class="mentee-header">
+            <h4>Pavithira S. &amp; Janany S.</h4>
+            <span class="mentee-role">Undergraduate Researchers &middot; Univ. of Vavuniya</span>
+          </div>
+          <p class="mentee-desc">Mentored on explainable AI with resting-state fMRI and graph convolutional networks for Alzheimer's staging at <em>IEEE ICARC</em> (2025) and <em>IEEE ICITR</em> (2025).</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACADEMIC EXPERIENCE & TALKS SECTION -->
+    <section id="experience" class="section-block">
+      <div class="section-header">
+        <h2 class="section-title">Academic Experience &amp; Service</h2>
+        <span class="section-subtitle">Positions held, invited talks, and scholarly peer review</span>
+      </div>
+
+      <div class="exp-grid">
+        <!-- Experience Column -->
+        <div class="exp-col">
+          <h3 class="col-title">Academic Appointments</h3>
+          <div class="exp-card">
+            <span class="exp-time">2023 &ndash; Present</span>
+            <h4>Graduate Research Assistant</h4>
+            <p class="exp-sub">Dept. of Radiology &amp; Diagnostic Imaging, University of Alberta</p>
+            <p class="exp-text">Leading research projects in 3D intraoral ultrasound, supervising undergraduate students, and managing clinical collaborator workflows.</p>
+          </div>
+
+          <div class="exp-card">
+            <span class="exp-time">2022</span>
+            <h4>Lecturer in Information Technology</h4>
+            <p class="exp-sub">Department of Information Technology, Eastern University, Sri Lanka</p>
+            <p class="exp-text">Instructed university courses in computer programming, database systems, software engineering, and emerging AI technologies.</p>
+          </div>
+
+          <div class="exp-card">
+            <span class="exp-time">2021 &ndash; 2022</span>
+            <h4>Instructor in Computer Science</h4>
+            <p class="exp-sub">Department of Computer Science, University of Jaffna, Sri Lanka</p>
+            <p class="exp-text">Delivered practical laboratory sessions and coursework on data structures, algorithms, and applied software development.</p>
+          </div>
+
+          <h3 class="col-title" style="margin-top: 2rem;">Invited Talks</h3>
+          <div class="exp-card">
+            <span class="exp-time">Jul 2026</span>
+            <h4>Fudan University, Shanghai, China</h4>
+            <p class="exp-text"><em>"Artificial Intelligence-driven Ultrasound Imaging: From Real-time 3D Reconstruction to Precision Healthcare"</em> &middot; Dept. of Biomedical Engineering.</p>
+          </div>
+
+          <div class="exp-card">
+            <span class="exp-time">Aug 2026</span>
+            <h4>University of Vavuniya, Sri Lanka</h4>
+            <p class="exp-text"><em>"Artificial Intelligence in Intraoral Ultrasound"</em> &middot; Department of Physical Science.</p>
+          </div>
+        </div>
+
+        <!-- Service & Reviewing Column -->
+        <div class="exp-col">
+          <h3 class="col-title">Peer Review for Top Journals</h3>
+          <div class="review-box">
+            <ul class="review-list">
+              <li><strong>Medical Image Analysis</strong> <span class="badge-mini">IF: 11.8</span></li>
+              <li><strong>IEEE Transactions on Medical Imaging</strong> <span class="badge-mini">IF: 9.8</span></li>
+              <li><strong>ACS Sensors</strong> <span class="badge-mini">IF: 8.3</span></li>
+              <li><strong>Engineering Applications of Artificial Intelligence</strong> <span class="badge-mini">IF: 8.0</span></li>
+              <li><strong>Computers in Biology and Medicine</strong> <span class="badge-mini">IF: 6.3</span></li>
+              <li><strong>Neural Networks</strong> <span class="badge-mini">IF: 6.0</span></li>
+              <li><strong>Computerized Medical Imaging and Graphics</strong> <span class="badge-mini">IF: 4.9</span></li>
+            </ul>
+          </div>
+
+          <h3 class="col-title" style="margin-top: 2rem;">Leadership &amp; Community Service</h3>
+          <div class="exp-card">
+            <span class="exp-time">2024 &ndash; Present</span>
+            <h4>Vice President (Academic Events)</h4>
+            <p class="exp-sub">Radiology &amp; Diagnostic Imaging Graduate Student Association, University of Alberta</p>
+            <p class="exp-text">Coordinating academic seminars, research symposiums, and professional development workshops for departmental graduate trainees.</p>
+          </div>
+
+          <div class="exp-card">
+            <span class="exp-time">2024 &ndash; Present</span>
+            <h4>Community Engagement</h4>
+            <p class="exp-sub">Edmonton Tamil Cultural Association (ETCA)</p>
+            <p class="exp-text">Active organizer of community cultural initiatives, volunteer educational programs, and youth mentorship activities.</p>
+          </div>
+
+          <div class="exp-card">
+            <span class="exp-time">Professional Memberships</span>
+            <p class="exp-text">
+              &bull; <strong>IEEE</strong> (Student Member)<br>
+              &bull; <strong>MICCAI Society</strong> (Member)<br>
+              &bull; <strong>IADR / AADOCR / CADR</strong> (Student Member)<br>
+              &bull; <strong>NeuroResearchLab</strong> (Research Consultant)
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS SECTION -->
+    <section id="skills" class="section-block">
+      <div class="section-header">
+        <h2 class="section-title">Technical Expertise</h2>
+        <span class="section-subtitle">Tooling, programming languages, and computational frameworks</span>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-category">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+          </div>
+          <h4>Machine Learning &amp; AI</h4>
+          <div class="skill-tags">
+            <span>PyTorch</span>
+            <span>Keras / TensorFlow</span>
+            <span>MONAI</span>
+            <span>OpenCV</span>
+            <span>Scikit-learn</span>
+            <span>Graph Neural Networks (PyG)</span>
+            <span>Diffusion Models</span>
+            <span>Vision Transformers</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+          </div>
+          <h4>Quantum Computing</h4>
+          <div class="skill-tags">
+            <span>Qiskit</span>
+            <span>PennyLane</span>
+            <span>Variational Quantum Circuits (VQC)</span>
+            <span>Quantum ML</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+          </div>
+          <h4>Programming &amp; Compute</h4>
+          <div class="skill-tags">
+            <span>Python</span>
+            <span>C++</span>
+            <span>MATLAB</span>
+            <span>C#</span>
+            <span>Java</span>
+            <span>LaTeX</span>
+            <span>Linux / Bash</span>
+            <span>Git / GitHub</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+          </div>
+          <h4>Medical Imaging &amp; Databases</h4>
+          <div class="skill-tags">
+            <span>3D Ultrasound Reconstruct</span>
+            <span>DICOM Processing</span>
+            <span>Brain Tractography</span>
+            <span>MySQL</span>
+            <span>MongoDB</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section-block">
+      <div class="section-header">
+        <h2 class="section-title">Get in Touch</h2>
+        <span class="section-subtitle">Collaborations, inquiries, and academic exchange</span>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-left">
+          <h3>Logiraj Kumaralingam</h3>
+          <p class="contact-role">PhD Candidate, Medical Sciences</p>
+          <p class="contact-text">
+            I am always open to discussing new research collaborations in ultrasound imaging, biomedical computer vision, quantum computing, and precision diagnostics. Feel free to reach out directly.
+          </p>
+
+          <div class="contact-details">
+            <div class="contact-row">
+              <span class="c-icon"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></span>
+              <a href="mailto:logiraj@ualberta.ca" class="c-link">logiraj@ualberta.ca</a>
+              <button class="copy-btn" id="copyEmailBtn" data-email="logiraj@ualberta.ca" title="Copy email address">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                <span class="copy-text">Copy</span>
+              </button>
+            </div>
+            <div class="contact-row">
+              <span class="c-icon"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></span>
+              <span>Department of Radiology and Diagnostic Imaging<br>University of Alberta, Edmonton, AB, Canada</span>
+            </div>
+            <div class="contact-row">
+              <span class="c-icon"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></span>
+              <span>Website: <a href="https://biomedcom.github.io" class="c-link">biomedcom.github.io</a></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-right">
+          <div class="quick-connect-box">
+            <h4>Quick Profiles</h4>
+            <div class="quick-links-list">
+              <a href="https://scholar.google.com/scholar?q=Logiraj+Kumaralingam" target="_blank" rel="noopener" class="quick-link-item">
+                <span class="ql-name">Google Scholar</span>
+                <span class="ql-arrow">&rarr;</span>
+              </a>
+              <a href="https://github.com/BioMedCom" target="_blank" rel="noopener" class="quick-link-item">
+                <span class="ql-name">GitHub (@BioMedCom)</span>
+                <span class="ql-arrow">&rarr;</span>
+              </a>
+              <a href="https://www.linkedin.com/in/logiraj" target="_blank" rel="noopener" class="quick-link-item">
+                <span class="ql-name">LinkedIn Profile</span>
+                <span class="ql-arrow">&rarr;</span>
+              </a>
+              <a href="cv.pdf" target="_blank" rel="noopener" class="quick-link-item">
+                <span class="ql-name">Download Full CV (PDF)</span>
+                <span class="ql-arrow">&rarr;</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top" title="Back to top">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <p>&copy; 2026 Logiraj Kumaralingam &middot; Hosted on <a href="https://github.com/BioMedCom/biomedcom.github.io" target="_blank" rel="noopener">GitHub Pages</a>.</p>
+      <p class="footer-sub">Designed for academic excellence &amp; biomedical innovation.</p>
     </div>
-  </section>
+  </footer>
 
-  <section id="education">
-    <h2>Education</h2>
-    <div class="item">
-      <h3>PhD Candidate, Medical Sciences</h3>
-      <p class="meta">University of Alberta, Canada &middot; 2023 &ndash; 2027 (expected)</p>
-      <p class="meta">Supervisor: Prof. Lawrence H. Le</p>
-    </div>
-    <div class="item">
-      <h3>MSc (transferred to PhD), Radiology and Diagnostic Imaging</h3>
-      <p class="meta">University of Alberta, Canada &middot; 2022</p>
-    </div>
-    <div class="item">
-      <h3>BSc (Hons) Computer Science, First Class (GPA 3.81/4.00)</h3>
-      <p class="meta">Eastern University, Sri Lanka &middot; 2017 &ndash; 2021</p>
-      <p class="meta">Thesis: Automatic Clustering of Major White Matter Bundles using Tract-specific Geometric Curve Features</p>
-    </div>
-  </section>
-
-  <section id="publications">
-    <h2>Selected Publications</h2>
-    <p class="meta" style="margin-bottom:1rem">A full list is available in my <a href="cv.pdf">CV</a>.</p>
-
-    <div class="pub">
-      <div class="title">Development and Validation of a Freehand 3D Ultrasound System for Real-Time Intraoral Image Reconstruction</div>
-      <div class="venue">Chen*, <span class="me">Kumaralingam*</span>, Alavi*, et al. &middot; IEEE Transactions on Instrumentation and Measurement, 2026 &middot; <a href="https://doi.org/10.1109/TIM.2026.3690813">DOI</a></div>
-    </div>
-    <div class="pub">
-      <div class="title">Automatic Assessment of Periodontium Complex in Intraoral Ultrasound Videos</div>
-      <div class="venue"><span class="me">Kumaralingam</span> et al. &middot; Journal of Dental Research, 2025 &middot; <a href="https://doi.org/10.1177/00220345251387713">DOI</a></div>
-    </div>
-    <div class="pub">
-      <div class="title">AI-assisted approach to assessing bowel wall thickness in pediatric inflammatory bowel disease using intestinal ultrasound images</div>
-      <div class="venue"><span class="me">Kumaralingam</span> et al. &middot; Journal of Crohn's and Colitis, 2025 &middot; <a href="https://doi.org/10.1093/ecco-jcc/jjaf037">DOI</a></div>
-    </div>
-    <div class="pub">
-      <div class="title">OralSAM: One-Shot Segmentation for Intraoral Ultrasound Videos with Adaptive Feature Correlation and Self-prompting Strategy</div>
-      <div class="venue"><span class="me">Kumaralingam</span> et al. &middot; MICCAI, 2025 &middot; <a href="https://doi.org/10.1007/978-3-032-04981-0_37">DOI</a></div>
-    </div>
-    <div class="pub">
-      <div class="title">DetSegDiff: A joint periodontal landmark detection and segmentation in intraoral ultrasound using edge-enhanced diffusion-based network</div>
-      <div class="venue"><span class="me">Kumaralingam</span> et al. &middot; Computers in Biology and Medicine, 2024 &middot; <a href="https://doi.org/10.1016/j.compbiomed.2024.109174">DOI</a></div>
-    </div>
-    <div class="pub">
-      <div class="title">Neural implicit surface reconstruction of freehand 3D ultrasound volume with geometric constraints</div>
-      <div class="venue">Chen*, <span class="me">Kumaralingam*</span>, et al. &middot; Medical Image Analysis, 2024 &middot; <a href="https://doi.org/10.1016/j.media.2024.103305">DOI</a></div>
-    </div>
-    <div class="pub">
-      <div class="title">Segmentation of whole-brain tractography: a deep learning algorithm based on 3D raw curve points</div>
-      <div class="venue"><span class="me">Kumaralingam</span> et al. &middot; MICCAI, 2022 &middot; <a href="https://doi.org/10.1007/978-3-031-16431-6_18">DOI</a></div>
-    </div>
-    <p class="meta">* equal contribution</p>
-  </section>
-
-  <section id="awards">
-    <h2>Honors, Awards &amp; Grants</h2>
-    <table>
-      <tr><td class="date">2026</td><td><strong>Best Poster Presentation</strong>, Faculty of Engineering Graduate Research Symposium (FEGRS)</td></tr>
-      <tr><td class="date">2026</td><td>GSA Academic Travel Grant; Upper Bound 2026 Talent Bursary (Amii)</td></tr>
-      <tr><td class="date">2025</td><td>Andrew Stewart Memorial Graduate Award</td></tr>
-      <tr><td class="date">2023</td><td><strong>Best Paper Award</strong>, IEEE International Conference on Advancements in Computing (ICAC)</td></tr>
-      <tr><td class="date">2023&ndash;2026</td><td>Alberta Innovates Graduate Student Scholarship</td></tr>
-      <tr><td class="date">2023&ndash;2024</td><td>Alberta Graduate Excellence Scholarship (AGES)</td></tr>
-      <tr><td class="date">2022</td><td>MICCAI Student Travel Award</td></tr>
-      <tr><td class="date">2021</td><td><strong>Excellent Paper Award</strong>, IEEE International Conference on Advances in ICT for Emerging Regions (ICTer)</td></tr>
-    </table>
-
-    <h3 style="margin-top:1.6rem">Grant contributions</h3>
-    <ul>
-      <li>NSERC Discovery Grant (2025, successful): compact AI-driven portable freehand 3D intraoral ultrasound system. Research coordinator.</li>
-      <li>NFRF Exploration 2026 (submitted): The Living Muscle Twin. Research coordinator.</li>
-      <li>NSERC&ndash;Alberta Innovates Advance Stream II (submitted): SmartIUS, handheld ultrasound for pediatric IBD. Research coordinator.</li>
-    </ul>
-  </section>
-
-  <section id="talks">
-    <h2>Invited Talks</h2>
-    <table>
-      <tr><td class="date">Jul 2026</td><td>Artificial Intelligence-driven Ultrasound Imaging: From Real-time 3D Reconstruction to Precision Healthcare. Fudan University, Shanghai</td></tr>
-      <tr><td class="date">Aug 2026</td><td>Artificial Intelligence in Intraoral Ultrasound. University of Vavuniya, Sri Lanka</td></tr>
-    </table>
-  </section>
-
-  <section id="mentoring">
-    <h2>Teaching &amp; Mentoring</h2>
-    <p>
-      I have mentored graduate and undergraduate students across the University of Alberta and the University of Vavuniya
-      on deep learning, medical image processing, and scientific writing, supporting more than a dozen peer-reviewed
-      papers and conference presentations. Earlier, I taught as a Lecturer in Information Technology at Eastern University
-      and as an Instructor in Computer Science at the University of Jaffna, Sri Lanka.
-    </p>
-  </section>
-
-  <section id="service">
-    <h2>Service</h2>
-    <ul>
-      <li><strong>Peer reviewer:</strong> Medical Image Analysis, IEEE Transactions on Medical Imaging, Computers in Biology and Medicine, Computerized Medical Imaging and Graphics, Engineering Applications of AI, Neural Networks, ACS Sensors</li>
-      <li><strong>Vice President (Academic Events),</strong> Radiology and Diagnostic Imaging Graduate Student Association, University of Alberta</li>
-      <li><strong>Memberships:</strong> IEEE, MICCAI Society, IADR/AADOCR/CADR</li>
-    </ul>
-  </section>
-
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="tags">
-      <span class="tag">PyTorch</span><span class="tag">Keras</span>
-      <span class="tag">Qiskit</span><span class="tag">PennyLane</span>
-      <span class="tag">Python</span><span class="tag">C++</span><span class="tag">MATLAB</span><span class="tag">Java</span><span class="tag">C#</span>
-      <span class="tag">MySQL</span><span class="tag">MongoDB</span><span class="tag">Linux</span>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>
-      Email: <a href="mailto:logiraj@ualberta.ca">logiraj@ualberta.ca</a><br>
-      Department of Radiology and Diagnostic Imaging, University of Alberta, Edmonton, Alberta, Canada
-    </p>
-  </section>
-
-</main>
-
-<footer>&copy; 2026 Logiraj Kumaralingam</footer>
-
+  <script src="script.js"></script>
 </body>
 </html>
